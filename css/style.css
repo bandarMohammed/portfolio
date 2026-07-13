@@ -20,7 +20,7 @@
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: 'Tajawal', sans-serif;
+  font-family: 'Tajawal', 'Poppins', sans-serif;
   background: var(--white);
   color: var(--navy);
   line-height: 1.8;
@@ -105,6 +105,37 @@ body {
   background: var(--navy);
   color: var(--white) !important;
 }
+
+/* عند اختيار الإنجليزية يُستخدم خط Poppins */
+html[lang="en"] body { font-family: 'Poppins', 'Tajawal', sans-serif; }
+
+.nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* زر تبديل اللغة */
+.lang-toggle {
+  font-family: 'Tajawal', 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 800;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 2px solid var(--gray);
+  background: transparent;
+  color: var(--white);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.lang-toggle:hover {
+  background: var(--gray);
+  color: var(--navy);
+  transform: translateY(-2px);
+}
+.navbar.scrolled .lang-toggle { color: var(--navy); border-color: var(--navy); }
+.navbar.scrolled .lang-toggle:hover { background: var(--navy); color: var(--white); }
 
 .menu-toggle {
   display: none;
