@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>بندر محمد الطلحي | الموقع الشخصي</title>
+  <meta name="description" content="الموقع الشخصي لبندر محمد الطلحي - من أنا، اهتماماتي، إنجازاتي، خدماتي، وتواصل معي">
+  <!-- خط Tajawal العربي + Poppins للإنجليزية من Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&family=Poppins:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===================== شريط التنقل ===================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#hero" class="logo" data-i18n="logo">بندر<span>.</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about" data-i18n="nav_about">من أنا</a>
+        <a href="#interests" data-i18n="nav_interests">اهتماماتي</a>
+        <a href="#achievements" data-i18n="nav_achievements">إنجازاتي</a>
+        <a href="#services" data-i18n="nav_services">خدماتي</a>
+        <a href="#contact" class="nav-cta" data-i18n="nav_contact">تواصل معي</a>
+      </nav>
+      <div class="nav-controls">
+        <!-- زر تبديل اللغة -->
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button>
+        <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== القسم الرئيسي (Hero) ===================== -->
+  <section class="hero" id="hero">
+    <div class="container hero-inner">
+      <div class="hero-text reveal">
+        <p class="hero-greeting" data-i18n="hero_greeting">أهلاً بك، أنا</p>
+        <h1 class="hero-name" data-i18n="hero_name">بندر محمد الطلحي</h1>
+        <p class="hero-tagline" data-i18n="hero_tagline">
+          <!-- ✏️ عدّل هذا الوصف ليعبر عنك: تخصصك أو شغفك في سطر واحد -->
+          شغوف بالتقنية وتطوير الذات، أسعى دائماً للتعلم وبناء أثر إيجابي.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary" data-i18n="hero_cta">تواصل معي</a>
+          <a href="#about" class="btn btn-outline" data-i18n="hero_more">اعرف المزيد</a>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <!-- 🖼️ الصورة الشخصية: assets/images/profile.jpg -->
+        <div class="hero-photo-frame">
+          <img src="assets/images/profile.jpg" alt="صورة بندر محمد الطلحي"
+               onerror="this.style.display='none'; this.parentElement.classList.add('photo-placeholder');">
+          <span class="photo-initials">ب</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 90" preserveAspectRatio="none">
+        <path d="M0,60 C360,110 1080,0 1440,50 L1440,90 L0,90 Z" fill="#ffffff"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ===================== من أنا ===================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title reveal" data-i18n="about_title">من <span>أنا</span></h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p data-i18n="about_p1">
+            <!-- ✏️ اكتب نبذة تعريفية عنك هنا (2-4 أسطر): دراستك، خلفيتك، ما الذي يميزك -->
+            أنا بندر محمد الطلحي، طالب طموح أؤمن بأن التعلم المستمر هو مفتاح النجاح.
+            أهتم بالتقنية وتطوير المهارات، وأسعى لتحويل الأفكار إلى مشاريع واقعية تخدم المجتمع.
+          </p>
+          <p data-i18n="about_p2">
+            أبحث دائماً عن فرص جديدة للنمو، وأستمتع بالعمل ضمن فريق وبناء علاقات مهنية مثمرة.
+          </p>
+          <ul class="about-facts">
+            <li><strong data-i18n="fact_name_label">الاسم:</strong> <span data-i18n="fact_name">بندر محمد الطلحي</span></li>
+            <li><strong data-i18n="fact_location_label">الموقع:</strong> <span data-i18n="fact_location">المملكة العربية السعودية</span></li>
+            <li><strong data-i18n="fact_linkedin_label">لينكد إن:</strong>
+              <a href="https://www.linkedin.com/in/bandar-al-talhi-b187a6333" target="_blank" rel="noopener" data-i18n="fact_linkedin">ملفي الشخصي</a>
+            </li>
+          </ul>
+        </div>
+        <div class="about-visual reveal">
+          <div class="about-card">
+            <div class="stat"><span class="stat-num" data-count="10">0</span><span class="stat-label" data-i18n="stat_projects">مشروع ومبادرة</span></div>
+            <div class="stat"><span class="stat-num" data-count="5">0</span><span class="stat-label" data-i18n="stat_skills">مهارات أساسية</span></div>
+            <div class="stat"><span class="stat-num" data-count="100">0</span><span class="stat-label" data-i18n="stat_passion">٪ شغف والتزام</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== اهتماماتي ===================== -->
+  <section class="section section-gray" id="interests">
+    <div class="container">
+      <h2 class="section-title reveal" data-i18n="interests_title">اهتما<span>ماتي</span></h2>
+      <div class="cards-grid">
+        <!-- ✏️ عدّل الاهتمامات التالية أو أضف بطاقات جديدة بنفس البنية -->
+        <div class="card reveal">
+          <div class="card-icon">💻</div>
+          <h3 data-i18n="int1_title">التقنية والبرمجة</h3>
+          <p data-i18n="int1_desc">متابعة أحدث التقنيات وتعلم أساسيات تطوير المواقع والتطبيقات.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon">📚</div>
+          <h3 data-i18n="int2_title">التعلم المستمر</h3>
+          <p data-i18n="int2_desc">القراءة وحضور الدورات التدريبية لتطوير مهاراتي الشخصية والمهنية.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon">🤝</div>
+          <h3 data-i18n="int3_title">العمل التطوعي</h3>
+          <p data-i18n="int3_desc">المشاركة في المبادرات المجتمعية وترك أثر إيجابي في المحيط.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon">🎯</div>
+          <h3 data-i18n="int4_title">ريادة الأعمال</h3>
+          <p data-i18n="int4_desc">الاطلاع على قصص النجاح واستكشاف الأفكار والمشاريع الناشئة.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== إنجازاتي ===================== -->
+  <section class="section" id="achievements">
+    <div class="container">
+      <h2 class="section-title reveal" data-i18n="achievements_title">إنجا<span>زاتي</span></h2>
+      <div class="timeline">
+        <!-- ✏️ عدّل الإنجازات التالية: السنة، العنوان، والوصف -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2026</span>
+            <h3 data-i18n="ach1_title">إطلاق موقعي الشخصي</h3>
+            <p data-i18n="ach1_desc">تصميم وبناء موقع شخصي يعكس هويتي البصرية باستخدام HTML و CSS و JavaScript.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2025</span>
+            <h3 data-i18n="ach2_title">إنجاز أكاديمي</h3>
+            <p data-i18n="ach2_desc">إتمام مقررات دراسية بتقدير مميز وتطوير مهارات جديدة.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2024</span>
+            <h3 data-i18n="ach3_title">مشاركة مجتمعية</h3>
+            <p data-i18n="ach3_desc">المشاركة في فعاليات ومبادرات تطوعية داخل الجامعة والمجتمع.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== خدماتي ===================== -->
+  <section class="section section-navy" id="services">
+    <div class="container">
+      <h2 class="section-title light reveal" data-i18n="services_title">خدما<span>تي</span></h2>
+      <div class="cards-grid">
+        <!-- ✏️ عدّل الخدمات حسب ما تقدمه فعلياً -->
+        <div class="card card-dark reveal">
+          <div class="card-icon">🌐</div>
+          <h3 data-i18n="srv1_title">تصميم صفحات ويب</h3>
+          <p data-i18n="srv1_desc">بناء صفحات ويب بسيطة وجذابة باستخدام HTML و CSS و JavaScript.</p>
+        </div>
+        <div class="card card-dark reveal">
+          <div class="card-icon">📝</div>
+          <h3 data-i18n="srv2_title">كتابة المحتوى</h3>
+          <p data-i18n="srv2_desc">صياغة محتوى عربي واضح واحترافي للمواقع والعروض التقديمية.</p>
+        </div>
+        <div class="card card-dark reveal">
+          <div class="card-icon">📊</div>
+          <h3 data-i18n="srv3_title">عروض تقديمية</h3>
+          <p data-i18n="srv3_desc">إعداد عروض تقديمية منظمة وأنيقة تناسب المشاريع الدراسية والمهنية.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== التواصل ===================== -->
+  <section class="section" id="contact">
+    <div class="container contact-inner">
+      <h2 class="section-title reveal" data-i18n="contact_title">تواصل <span>معي</span></h2>
+      <p class="contact-lead reveal" data-i18n="contact_lead">يسعدني تواصلك معي لأي فرصة تعاون أو استفسار.</p>
+      <div class="contact-links reveal">
+        <!-- ✏️ عدّل بريدك الإلكتروني هنا -->
+        <a href="mailto:s44455804@students.tu.edu.sa" class="contact-item">
+          <span class="contact-icon">✉️</span>
+          <span data-i18n="contact_email">البريد الإلكتروني</span>
+        </a>
+        <a href="https://www.linkedin.com/in/bandar-al-talhi-b187a6333" target="_blank" rel="noopener" class="contact-item">
+          <span class="contact-icon">💼</span>
+          <span data-i18n="contact_linkedin">لينكد إن</span>
+        </a>
+        <!-- ✏️ أضف حساباتك الأخرى (تويتر/X، جيت هب...) بنفس البنية -->
+      </div>
+      <form class="contact-form reveal" id="contactForm">
+        <div class="form-row">
+          <input type="text" id="name" data-i18n-placeholder="form_name" placeholder="اسمك الكريم" required>
+          <input type="email" id="email" data-i18n-placeholder="form_email" placeholder="بريدك الإلكتروني" required>
+        </div>
+        <textarea id="message" rows="5" data-i18n-placeholder="form_message" placeholder="اكتب رسالتك هنا..." required></textarea>
+        <button type="submit" class="btn btn-primary" data-i18n="form_submit">إرسال الرسالة</button>
+        <p class="form-status" id="formStatus"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===================== التذييل ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> <span data-i18n="footer_text">بندر محمد الطلحي — جميع الحقوق محفوظة</span></p>
+    </div>
+  </footer>
+
+  <!-- زر العودة للأعلى -->
+  <button class="back-to-top" id="backToTop" aria-label="العودة للأعلى">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
